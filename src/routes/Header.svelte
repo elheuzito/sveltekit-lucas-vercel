@@ -1,14 +1,12 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import logolucas from '$lib/images/rangelogo.png'
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
+		<img src={logolucas} alt="SvelteKit" />
 	</div>
 
 	<nav>
@@ -20,10 +18,10 @@
 				<a href="/">Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+				<a href="/about">Java</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+			<li aria-current={$page.url.pathname === '/Javascript' ? 'page' : undefined}>
+				<a href="/Javascript">Javascript</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -31,8 +29,8 @@
 		</svg>
 	</nav>
 
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+	<div class="github_right">
+		<a href="https://github.com/elheuzito">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
@@ -43,31 +41,30 @@
 		display: flex;
 		justify-content: space-between;
 	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
 	nav {
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
 	}
+	.corner {
+		padding-left: 20px;
+		width: 3em;
+		height: 3em;
+	}
+
+
+	.corner img {
+		width: 13em;
+		height: 9em;
+		object-fit: contain;
+	}
+	.github_right{
+		width: 3em;
+		height: 3em;
+		object-fit: contain;
+		padding-right: 10px;
+	}
+	
 
 	svg {
 		width: 2em;
@@ -98,7 +95,7 @@
 	}
 
 	li[aria-current='page']::before {
-		--size: 6px;
+		--size: 8px;
 		content: '';
 		width: 0;
 		height: 0;
@@ -106,7 +103,7 @@
 		top: 0;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
+		border-top: var(--size) solid #fb8332;
 	}
 
 	nav a {
@@ -124,6 +121,7 @@
 	}
 
 	a:hover {
-		color: var(--color-theme-1);
+		color: white;
 	}
 </style>
+
