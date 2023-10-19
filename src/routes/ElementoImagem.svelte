@@ -1,6 +1,6 @@
 <script>
     import java from '$lib/images/java.svg';
-    import JavaScript from '$lib/images/JavaScript.svg';
+    import JavaScript from '$lib/images/javascript.svg';
   </script>
   
   <style>
