@@ -20,24 +20,21 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-attachment: fixed;
-	background-color: var(--color-bg-1);
+	background-color: rgba(53, 73, 94);
 	background-size: 100vw 100vh;
-	background-image: radial-gradient(
-			50% 50% at 50% 50%,
-			rgba(255, 255, 255, 0.75) 0%,
-			rgba(255, 255, 255, 0) 100%
-		),
-		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
 }
 
 h1,
 h2,
 p {
 	font-weight: 400;
+	font-size:1.2em;
+	padding-left: 10px;
+	margin-bottom: 10px;
 }
 
 p {
-	line-height: 1.5;
+	line-height: 1.5em;
 }
 
 a {
@@ -55,7 +52,8 @@ h1 {
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: 1.1rem;
+	font-weight: 500;
 }
 
 pre {

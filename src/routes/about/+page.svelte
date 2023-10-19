@@ -5,7 +5,7 @@
 
 <div class="agrupador">
 <div class="text-column">
-	<h1 class='Branco'>Lista de Javascript</h1>
+	<h1 class='Branco'>Lista de Java</h1>
 
 	<p class='Branco'>
 		1. Número é primo: <br>
